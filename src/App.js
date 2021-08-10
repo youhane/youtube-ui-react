@@ -3,6 +3,8 @@ import './App.css';
 // Components
 import TopNavbar from './Components/TopNavbar';
 import SideNavbar from './Components/SideNavbar';
+import CategorySlider from './Components/CategorySlider/CategorySlider';
+import Videos from './Components/Videos';
 
 const App = () => {
   return (
@@ -10,8 +12,10 @@ const App = () => {
       <div>
         <SideNavbar />
       </div>
-      <div>
+      <div className="divide-y ">
         <TopNavbar />
+        <CategorySlider />
+        <Videos />
       </div>
     </div>
   );

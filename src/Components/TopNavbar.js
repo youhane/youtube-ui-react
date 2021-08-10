@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 // Components
 import Button from './Button';
 import TransparentButton from './TransparentButton';
+import CircleButton from './CircleButton';
 
 // Styles
 import '../index.css';
@@ -17,7 +18,7 @@ const TopNavbar = () => (
         <div className="flex">
             <input type='search' placeholder="Search" className="border-2 p-1 pl-4 h-3/4" size="50" />
             <Button icon="search" />
-            <Button icon="microphone" />
+            <CircleButton icon="microphone" />
         </div>
         <div className="flex">
             <TransparentButton icon="video" />

@@ -6,7 +6,7 @@ const Video = ({ title, channel, views, duration, when }) => (
             <img
                 src="https://i.ytimg.com/vi/diR-Mg4fE-0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPcVMqtgUdlcps6G89UWMIc_WdZA"
                 className="" />
-            <p className="absolute bg-black text-white p-1 transform translate-x-53">{duration}</p>
+            <p className="absolute bg-black text-white p-1 transform translate-x-53 translate-y-25 text-sm">{duration}</p>
         </div>
         <div className="flex">
             <div>

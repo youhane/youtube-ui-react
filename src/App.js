@@ -16,6 +16,8 @@ const App = () => {
         <TopNavbar />
         <CategorySlider />
         <Videos />
+        <Videos />
+        <Videos />
       </div>
     </div>
   );

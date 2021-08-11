@@ -1,5 +1,3 @@
-import react from "react";
-
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'

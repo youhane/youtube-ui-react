@@ -1,4 +1,3 @@
-import react from "react";
 import Video from "./Video";
 
 // Assets
@@ -7,18 +6,12 @@ import Thumbnail2 from '../Assets/Thumbnails/2.svg';
 import Thumbnail3 from '../Assets/Thumbnails/3.svg';
 import Thumbnail4 from '../Assets/Thumbnails/4.svg';
 import Thumbnail5 from '../Assets/Thumbnails/5.svg';
-import Thumbnail6 from '../Assets/Thumbnails/6.svg';
-import Thumbnail7 from '../Assets/Thumbnails/7.svg';
-import Thumbnail8 from '../Assets/Thumbnails/8.svg';
 
 import Logo1 from '../Assets/Logo/1.svg';
 import Logo2 from '../Assets/Logo/2.svg';
 import Logo3 from '../Assets/Logo/3.svg';
 import Logo4 from '../Assets/Logo/4.svg';
 import Logo5 from '../Assets/Logo/5.svg';
-import Logo6 from '../Assets/Logo/6.svg';
-import Logo7 from '../Assets/Logo/7.svg';
-import Logo8 from '../Assets/Logo/8.svg';
 
 const Videos = ({ title }) => (
     <div className="bg-gray-100 border-none">

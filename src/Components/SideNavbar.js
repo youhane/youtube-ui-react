@@ -1,5 +1,3 @@
-import react from "react";
-
 // Components
 import TransparentButton from "./TransparentButton";
 import RedHoverButton from "./RedHoverButton";

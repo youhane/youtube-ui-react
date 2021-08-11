@@ -1,6 +1,3 @@
-import react from 'react';
-import { Link } from 'react-router-dom';
-
 // Components
 import Button from './Button';
 import TransparentButton from './TransparentButton';

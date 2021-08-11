@@ -11,6 +11,15 @@ import Thumbnail6 from '../Assets/Thumbnails/6.svg';
 import Thumbnail7 from '../Assets/Thumbnails/7.svg';
 import Thumbnail8 from '../Assets/Thumbnails/8.svg';
 
+import Logo1 from '../Assets/Logo/1.svg';
+import Logo2 from '../Assets/Logo/2.svg';
+import Logo3 from '../Assets/Logo/3.svg';
+import Logo4 from '../Assets/Logo/4.svg';
+import Logo5 from '../Assets/Logo/5.svg';
+import Logo6 from '../Assets/Logo/6.svg';
+import Logo7 from '../Assets/Logo/7.svg';
+import Logo8 from '../Assets/Logo/8.svg';
+
 const Videos = ({ title }) => (
     <div className="bg-gray-100 border-none">
         {title ? (
@@ -24,6 +33,7 @@ const Videos = ({ title }) => (
         <div className="flex space-x-4 py-5 px-10">
             <Video
                 thumb={Thumbnail1}
+                logo={Logo1}
                 title="This is a title"
                 channel="Channel name"
                 views="412K"
@@ -31,6 +41,7 @@ const Videos = ({ title }) => (
                 when="2 years" />
             <Video
                 thumb={Thumbnail2}
+                logo={Logo2}
                 title="This is a title"
                 channel="Channel name"
                 views="412K"
@@ -38,6 +49,7 @@ const Videos = ({ title }) => (
                 when="2 years" />
             <Video
                 thumb={Thumbnail3}
+                logo={Logo3}
                 title="This is a title"
                 channel="Channel name"
                 views="412K"
@@ -45,6 +57,7 @@ const Videos = ({ title }) => (
                 when="2 years" />
             <Video
                 thumb={Thumbnail4}
+                logo={Logo4}
                 title="This is a title"
                 channel="Channel name"
                 views="412K"
@@ -52,6 +65,7 @@ const Videos = ({ title }) => (
                 when="2 years" />
             <Video
                 thumb={Thumbnail5}
+                logo={Logo5}
                 title="This is a title"
                 channel="Channel name"
                 views="412K"

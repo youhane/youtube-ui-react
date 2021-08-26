@@ -8,9 +8,9 @@ import { faHome, faCompass, faVideo, faBook } from '@fortawesome/free-solid-svg-
 library.add(faHome, faCompass, faVideo, faBook)
 
 const RedHoverButton = ({ icon, size, name }) => (
-    <button className="hover:text-red-500 hover:bg-gray-100 p-3">
+    <button className="hover:text-red-500 hover:bg-gray-100 px-2 py-3">
         <FontAwesomeIcon icon={icon} size={size} />
-        <p>{name}</p>
+        <p className="text-xs">{name}</p>
     </button>
 );
 

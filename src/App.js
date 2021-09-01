@@ -1,5 +1,3 @@
-import './App.css';
-
 // Components
 import TopNavbar from './Components/TopNavbar';
 import SideNavbar from './Components/SideNavbar';

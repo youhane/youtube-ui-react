@@ -1,13 +1,10 @@
 // Components
-import Button from './Button';
-import TransparentButton from './TransparentButton';
-import CircleButton from './CircleButton';
-
-// Styles
-import '../index.css';
+import Button from '../../Buttons/Button';
+import TransparentButton from '../../Buttons/TransparentButton';
+import CircleButton from '../../Buttons/CircleButton';
 
 // Assets
-import YoutubeLogo from "../Assets/youtube-logo.png";
+import YoutubeLogo from "../../../Assets/youtube-logo.png";
 
 const TopNavbar = () => (
     <nav className="flex space-x-72 my-4">

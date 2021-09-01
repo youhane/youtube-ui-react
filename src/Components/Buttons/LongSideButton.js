@@ -7,11 +7,11 @@ import { faVideo, faTh, faBell, faUserCircle, faBars } from '@fortawesome/free-s
 
 library.add(faVideo, faTh, faBell, faUserCircle, faBars)
 
-const LongSideButton = ({ title, icon }) => {
-    <button>
+const LongSideButton = ({ title, icon }) => (
+    <button className="bg-white hover:bg-gray-400 flex">
         <FontAwesomeIcon icon={icon} />
-        <p>{title}</p>
+        <p className="text-gray-300">{title}</p>
     </button>
-}
+)
 
 export default LongSideButton;

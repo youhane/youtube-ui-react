@@ -1,6 +1,6 @@
 // Components
-import TopNavbar from './Components/TopNavbar';
-import SideNavbar from './Components/SideNavbar';
+import TopNavbar from './Components/Navbars/TopNavbar/TopNavbar';
+import SideNavbar from './Components/Navbars/SideNavbar/SideNavbar';
 import CategorySlider from './Components/CategorySlider/CategorySlider';
 import Videos from './Components/Videos';
 

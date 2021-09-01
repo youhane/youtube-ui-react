@@ -1,0 +1,13 @@
+// Components
+import LongSideButton from "../../Buttons/LongSideButton";
+
+const ExpandedSideNavbar = () => (
+    <nav className="flex flex-col my-5">
+        <LongSideButton title="Home" icon="home" />
+        <LongSideButton title="Explore" icon="compass" />
+        <LongSideButton title="Subscriptions" icon="video" />
+        <LongSideButton title="Library" icon="book" />
+    </nav>
+)
+
+export default ExpandedSideNavbar;

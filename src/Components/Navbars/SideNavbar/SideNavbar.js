@@ -5,7 +5,7 @@ const SideNavbar = () => {
     return (
         <nav>
             <SmallSideNavbar />
-            <ExpandedSideNavbar />
+            <ExpandedSideNavbar title="stuff" />
         </nav>
     )
 }

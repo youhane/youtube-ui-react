@@ -7,6 +7,10 @@ const ExpandedSideNavbar = () => (
         <LongSideButton title="Explore" icon="compass" />
         <LongSideButton title="Subscriptions" icon="video" />
         <LongSideButton title="Library" icon="book" />
+        <LongSideButton title="Home" icon="home" />
+        <LongSideButton title="Explore" icon="compass" />
+        <LongSideButton title="Subscriptions" icon="video" />
+        <LongSideButton title="Library" icon="book" />
     </nav>
 )
 

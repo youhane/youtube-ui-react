@@ -1,7 +1,7 @@
 // Components
 import RedHoverButton from "../../Buttons/RedHoverButton";
 
-const SmallSideNavbar = () => (
+const SmallSideNavbar = ({ visibility }) => (
     <nav className="flex flex-col my-5">
         <RedHoverButton icon="home" name="Home" />
         <RedHoverButton icon="compass" name="Explore" />

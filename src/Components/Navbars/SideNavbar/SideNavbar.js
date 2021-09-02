@@ -1,3 +1,4 @@
+// Components
 import SmallSideNavbar from "./SmallSideNavbar"
 import ExpandedSideNavbar from "./ExpandedSideNavbar";
 
@@ -23,12 +24,12 @@ const SideNavbar = () => {
             <button id="smallNav" onClick={toggleBigNavbar}>
                 <SmallSideNavbar />
             </button>
-            <button id="bigNav" onClick={toggleBigNavbar}>
+            {/* <button id="bigNav" onClick={toggleBigNavbar}>
                 <ExpandedSideNavbar />
                 <ExpandedSideNavbar title="stuff" />
-            </button>
+            </button> */}
         </nav>
     )
-}
+};
 
 export default SideNavbar;

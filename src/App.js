@@ -7,16 +7,18 @@ import Videos from './Components/Videos';
 const App = () => {
   return (
     <div className="App flex overflow-x-hidden">
-      <div>
-        <SideNavbar />
-      </div>
       <div className="divide-y">
         <TopNavbar />
-        <CategorySlider />
-        <Videos />
-        <Videos />
-        <Videos />
-        <Videos title="Covid-19 News" />
+        <div className="flex">
+          <SideNavbar />
+          <div>
+            <CategorySlider />
+            <Videos />
+            <Videos />
+            <Videos />
+            <Videos title="Covid-19 News" />
+          </div>
+        </div>
       </div>
     </div>
   );

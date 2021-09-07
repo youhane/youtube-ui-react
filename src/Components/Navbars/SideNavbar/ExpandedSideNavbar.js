@@ -17,7 +17,7 @@ const ExpandedSideNavbar = ({ title }) => (
 )
 
 ExpandedSideNavbar.propTypes = {
-    visibility: Proptypes.bool,
+    isHidden: Proptypes.bool,
 }
 
 

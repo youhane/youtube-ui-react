@@ -2,12 +2,19 @@
 import SmallSideNavbar from "./SmallSideNavbar"
 import ExpandedSideNavbar from "./ExpandedSideNavbar";
 
-const SideNavbar = () => {
+const SideNavbar = ({ small }) => {
     return (
-        <nav>
-            <SmallSideNavbar />
-            <ExpandedSideNavbar />
-            <ExpandedSideNavbar title="stuff" />
+        <nav onClick={!small}>
+            {small ? (
+                <SmallSideNavbar />
+            ) : (
+                <div id="bigNav">
+                    <ExpandedSideNavbar />
+                    <ExpandedSideNavbar title="stuff" />
+                </div>
+            )}
+
+
         </nav>
     )
 };

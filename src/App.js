@@ -10,7 +10,7 @@ const App = () => {
       <div className="divide-y">
         <TopNavbar />
         <div className="flex">
-          <SideNavbar />
+          <SideNavbar small="true" />
           <div>
             <CategorySlider />
             <Videos />

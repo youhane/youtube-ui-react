@@ -4,8 +4,8 @@ import TransparentButton from './TransparentButton';
 // Assets
 import YoutubeLogo from "../../Assets/youtube-logo.png";
 
-const YoutubeButton = () => (
-    <div className="flex w-24">
+const YoutubeButton = (props) => (
+    <div className="flex w-24" onClick={props.setShowBigNav}>
         <button>
             <TransparentButton icon="bars" size="lg" />
         </button>

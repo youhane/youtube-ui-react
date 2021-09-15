@@ -5,7 +5,7 @@ import TransparentButton from './TransparentButton';
 import YoutubeLogo from "../../Assets/youtube-logo.png";
 
 const YoutubeButton = () => (
-    <div className="flex w-24 ">
+    <div className="flex w-24">
         <button>
             <TransparentButton icon="bars" size="lg" />
         </button>

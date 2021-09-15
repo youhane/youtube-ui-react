@@ -1,6 +1,5 @@
 // Components
 import LongSideButton from "../../Buttons/LongSideButton";
-import Proptypes from 'prop-types';
 
 const ExpandedSideNavbar = ({ title }) => (
     <nav className="flex-col my-5">
@@ -15,10 +14,6 @@ const ExpandedSideNavbar = ({ title }) => (
         <LongSideButton title="Library" icon="book" />
     </nav>
 )
-
-ExpandedSideNavbar.propTypes = {
-    isHidden: Proptypes.bool,
-}
 
 
 export default ExpandedSideNavbar;

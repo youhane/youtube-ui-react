@@ -1,21 +1,25 @@
 // Components
 import SmallSideNavbar from "./SmallSideNavbar"
 import ExpandedSideNavbar from "./ExpandedSideNavbar";
+import { useState } from "react";
 
-const SideNavbar = ({ small }) => {
+
+const SideNavbar = () => {
+    const [showBigNav, setShowBigNav] = useState(false)
     return (
-        <nav onClick={!small}>
-            {small ? (
-                <SmallSideNavbar />
-            ) : (
-                <div id="bigNav">
-                    <ExpandedSideNavbar />
-                    <ExpandedSideNavbar title="stuff" />
-                </div>
-            )}
+        <>
+            {
+                showBigNav ?
+                    <nav>
+                        <div id="bigNav" onClick={() => setShowBigNav(!showBigNav)}>
+                            <ExpandedSideNavbar />
+                            <ExpandedSideNavbar title="stuff" />
+                        </div>
+                    </nav>
+                    : <SmallSideNavbar onClick={() => setShowBigNav(!showBigNav)} />
+            }
 
-
-        </nav>
+        </>
     )
 };
 

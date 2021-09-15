@@ -5,7 +5,7 @@ import TransparentButton from './TransparentButton';
 import YoutubeLogo from "../../Assets/youtube-logo.png";
 
 const YoutubeButton = (props) => (
-    <div className="flex w-24" onClick={props.setShowBigNav}>
+    <div className="flex w-24" onClick={props.toggleMenu}>
         <button>
             <TransparentButton icon="bars" size="lg" />
         </button>

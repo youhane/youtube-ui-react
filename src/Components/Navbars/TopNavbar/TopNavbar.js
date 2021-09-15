@@ -4,10 +4,10 @@ import TransparentButton from '../../Buttons/TransparentButton';
 import CircleButton from '../../Buttons/CircleButton';
 import YoutubeButton from '../../Buttons/YoutubeButton';
 
-const TopNavbar = () => {
+const TopNavbar = (props) => {
     return (
-        <nav className="flex justify-between my-2">
-            <YoutubeButton />
+        <nav className="flex justify-between my-2" onClick={props.toggleMenu}>
+            {props.showLogo ? <></> : <YoutubeButton />}
             <div className="flex mx-auto">
                 <input type='search' placeholder="Search" className="border-2 p-1 pl-4 h-3/4" size="50" />
                 <Button icon="search" />
@@ -19,8 +19,6 @@ const TopNavbar = () => {
                 <TransparentButton icon="bell" />
                 <TransparentButton icon="user-circle" size="2x" />
             </div>
-            <ul>
-            </ul>
         </nav >
     )
 };

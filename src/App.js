@@ -1,17 +1,14 @@
 // Components
-import TopNavbar from './Components/Navbars/TopNavbar/TopNavbar';
 import SideNavbar from './Components/Navbars/SideNavbar/SideNavbar';
 import CategorySlider from './Components/CategorySlider/CategorySlider';
 import Videos from './Components/Videos';
-
-import BigSideNavbar from './Components/Navbars/SideNavbar/BigSideNavbar';
+import Navbar from './Components/Navbars/Navbar';
 
 const App = () => {
   return (
     <div className="App flex overflow-x-hidden">
-      <BigSideNavbar />
-      {/* <div className="divide-y">
-        <TopNavbar />
+      <div className="divide-y">
+        <Navbar />
         <div className="flex">
           <SideNavbar small="true" />
           <div>
@@ -22,7 +19,7 @@ const App = () => {
             <Videos title="Covid-19 News" />
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

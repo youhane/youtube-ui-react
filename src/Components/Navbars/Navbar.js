@@ -9,11 +9,11 @@ const Navbar = () => {
     return (
         <>
             {showBigNav ? <>
-                <TopNavbar toggleMenu={() => setShowBigNav(true)} showLogo={showBigNav} />
-                <BigSideNavbar toggleMenu={() => setShowBigNav(false)} />
+                <TopNavbar toggleMenu={() => setShowBigNav(!showBigNav)} />
+                <BigSideNavbar toggleMenu={() => setShowBigNav(!showBigNav)} />
             </>
                 :
-                <TopNavbar toggleMenu={() => setShowBigNav(true)} />
+                <TopNavbar toggleMenu={() => setShowBigNav(!showBigNav)} />
             }
         </>
     )

@@ -11,14 +11,14 @@ const SideNavbar = () => {
             {
                 showBigNav ?
                     <nav>
-                        <div id="bigNav" onClick={() => setShowBigNav(!showBigNav)}>
+                        <div onClick={() => setShowBigNav(!showBigNav)}>
                             <ExpandedSideNavbar />
                             <ExpandedSideNavbar title="stuff" />
                         </div>
                     </nav>
-                    : <SmallSideNavbar onClick={() => setShowBigNav(!showBigNav)} />
+                    :
+                    <SmallSideNavbar onClick={() => setShowBigNav(!showBigNav)} />
             }
-
         </>
     )
 };

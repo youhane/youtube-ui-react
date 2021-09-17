@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 // Icons
-import { faVideo, faTh, faBell, faUserCircle, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faVideo, faTh, faBell, faUserCircle, faBars, faChevronRight, faSignOutAlt, faUser, faUsers, faCog, faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faVideo, faTh, faBell, faUserCircle, faBars)
+library.add(faVideo, faTh, faBell, faUserCircle, faBars, faChevronRight, faSignOutAlt, faUser, faUsers, faCog, faDollarSign)
 
-const LongSideButton = ({ title, icon, img }) => (
+const LongSideButton = ({ title, icon, img, arrow }) => (
     <button className="bg-white hover:bg-gray-300 flex py-2 px-5 w-full">
         {
             icon ?
@@ -17,6 +17,7 @@ const LongSideButton = ({ title, icon, img }) => (
         }
 
         <p className="text-gray-800 pl-2">{title}</p>
+        {arrow ? <FontAwesomeIcon icon="chevron-right" className="ml-28 my-auto" /> : <></>}
     </button>
 )
 

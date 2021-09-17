@@ -3,6 +3,7 @@ import Button from '../../Buttons/Button';
 import TransparentButton from '../../Buttons/TransparentButton';
 import CircleButton from '../../Buttons/CircleButton';
 import YoutubeButton from '../../Buttons/YoutubeButton';
+import Profile from '../../PopUps/Profile';
 
 const TopNavbar = (props) => {
     return (
@@ -18,6 +19,7 @@ const TopNavbar = (props) => {
                 <TransparentButton icon="th" />
                 <TransparentButton icon="bell" />
                 <TransparentButton icon="user-circle" size="2x" />
+                <Profile />
             </div>
         </nav >
     )

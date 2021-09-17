@@ -1,6 +1,10 @@
-const SmallPopUps = () => {
+const SmallPopUps = ({ title }) => {
     return (
-        <div></div>
+        <div>
+            {
+                title ? <h1 className="font-bold">{title}</h1> : <></>
+            }
+        </div>
     )
 }
 

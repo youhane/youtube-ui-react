@@ -1,20 +1,16 @@
 // Components
 import ProfileHeader from "../ProfileHeader"
-import TransparentButton from "../Buttons/TransparentButton"
+import LongSideButton from "../Buttons/LongSideButton"
 
 const Profile = () => {
     return (
         <div>
             <ProfileHeader />
-            <TransparentButton />
-            <TransparentButton />
-            <TransparentButton />
-            <TransparentButton />
-            <TransparentButton />
-            <TransparentButton />
-            <TransparentButton />
-            <TransparentButton />
-            <TransparentButton />
+            <LongSideButton />
+            <LongSideButton />
+            <LongSideButton />
+            <LongSideButton />
+            <LongSideButton />
         </div>
     )
 }

@@ -7,9 +7,15 @@ import { faVideo, faTh, faBell, faUserCircle, faBars } from '@fortawesome/free-s
 
 library.add(faVideo, faTh, faBell, faUserCircle, faBars)
 
-const LongSideButton = ({ title, icon }) => (
+const LongSideButton = ({ title, icon, img }) => (
     <button className="bg-white hover:bg-gray-300 flex py-2 px-5 w-full">
-        <FontAwesomeIcon icon={icon} size="lg" />
+        {
+            icon ?
+                <FontAwesomeIcon icon={icon} size="lg" />
+                :
+                <img src={img} alt={img} />
+        }
+
         <p className="text-gray-800 pl-2">{title}</p>
     </button>
 )

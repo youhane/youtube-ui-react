@@ -4,7 +4,9 @@ import TransparentButton from '../../Buttons/TransparentButton';
 import CircleButton from '../../Buttons/CircleButton';
 import YoutubeButton from '../../Buttons/YoutubeButton';
 import Profile from '../../PopUps/Profile';
-import SmallPopUps from '../../PopUps/SmallPopUps';
+import Video from '../../PopUps/Video';
+import Notif from '../../PopUps/Notif';
+import Grid from '../../PopUps/Grid';
 
 // Packages
 import { useState } from "react"
@@ -25,17 +27,17 @@ const TopNavbar = (props) => {
             <div className="flex">
                 <TransparentButton icon="video" toggleSubMenu={() => setShowVideo(!showVideo)} />
                 {
-                    showVideo ? <SmallPopUps title="Videos" /> : <></>
+                    showVideo ? <Video title="Videos" /> : <></>
                 }
 
                 <TransparentButton icon="th" toggleSubMenu={() => setShowGrid(!showGrid)} />
                 {
-                    showGrid ? <SmallPopUps title="Grid" /> : <></>
+                    showGrid ? <Grid title="Grid" /> : <></>
                 }
 
                 <TransparentButton icon="bell" toggleSubMenu={() => setShowNotif(!showNotif)} />
                 {
-                    showNotif ? <SmallPopUps title="Notifs" /> : <></>
+                    showNotif ? <Notif title="Notifs" /> : <></>
                 }
 
                 <TransparentButton icon="user-circle" size="2x" toggleSubMenu={() => setShowProfile(!showProfile)} />

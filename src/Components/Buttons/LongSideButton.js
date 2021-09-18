@@ -7,11 +7,11 @@ import { faVideo, faTh, faBell, faUserCircle, faBars, faChevronRight, faSignOutA
 
 library.add(faVideo, faTh, faBell, faUserCircle, faBars, faChevronRight, faSignOutAlt, faUser, faUsers, faCog, faDollarSign)
 
-const LongSideButton = ({ title, icon, img, arrow }) => (
+const LongSideButton = ({ title, icon, size = "lg", img, arrow }) => (
     <button className="bg-white hover:bg-gray-300 flex py-2 px-5 w-full">
         {
             icon ?
-                <FontAwesomeIcon icon={icon} size="lg" />
+                <FontAwesomeIcon icon={icon} size={size} className="my-auto" />
                 :
                 <img src={img} alt={img} />
         }

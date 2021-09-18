@@ -10,7 +10,7 @@ library.add(faUserCircle)
 
 const ProfileHeader = ({ name }) => {
     return (
-        <div className="flex bg-white p-4">
+        <div className="flex bg-white p-4 border-b-2">
             <FontAwesomeIcon icon="user-circle" size="3x" />
             <div className="ml-2">
                 <h1>{name}</h1>

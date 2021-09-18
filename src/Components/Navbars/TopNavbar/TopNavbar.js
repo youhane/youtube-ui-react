@@ -9,7 +9,7 @@ import Profile from '../../PopUps/Profile';
 import { useState } from "react"
 
 const TopNavbar = (props) => {
-    const [showProfile, setShowProfile] = useState(false)
+    const [showProfile, setShowProfile] = useState(true)
     return (
         <nav className="flex justify-between my-2">
             <YoutubeButton toggleMenu={props.toggleMenu} />

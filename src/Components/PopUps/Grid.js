@@ -3,11 +3,10 @@ import LongSideButton from "../Buttons/LongSideButton"
 const Grid = () => {
     return (
         <div className="absolute bg-white top-12">
-            <LongSideButton />
-            <LongSideButton />
-            <LongSideButton />
-            <LongSideButton />
-            <LongSideButton />
+            <LongSideButton title="Upload video" icon="play" />
+            <LongSideButton title="Go live" icon="life-ring" />
+            <LongSideButton title="Upload video" icon="play" />
+            <LongSideButton title="Go live" icon="life-ring" />
         </div>
     )
 }

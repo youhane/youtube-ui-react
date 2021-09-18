@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 // Icons
-import { faVideo, faTh, faBell, faUserCircle, faBars, faChevronRight, faSignOutAlt, faUser, faUsers, faCog, faDollarSign } from '@fortawesome/free-solid-svg-icons'
+import { faVideo, faTh, faBell, faUserCircle, faBars, faChevronRight, faSignOutAlt, faUser, faUsers, faCog, faDollarSign, faPlay, faLifeRing } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faVideo, faTh, faBell, faUserCircle, faBars, faChevronRight, faSignOutAlt, faUser, faUsers, faCog, faDollarSign)
+library.add(faVideo, faTh, faBell, faUserCircle, faBars, faChevronRight, faSignOutAlt, faUser, faUsers, faCog, faDollarSign, faPlay, faLifeRing)
 
 const LongSideButton = ({ title, icon, size = "lg", img, arrow }) => (
     <button className="bg-white hover:bg-gray-300 flex py-2 px-5 w-full">

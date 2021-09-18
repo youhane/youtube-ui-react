@@ -12,7 +12,7 @@ library.add(faCog)
 
 const SmallPopUps = ({ title, gear }) => {
     return (
-        <div>
+        <div className="absolute">
             {
                 title ?
                     <div className="flex">

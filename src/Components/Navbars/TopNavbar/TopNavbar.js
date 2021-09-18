@@ -24,23 +24,25 @@ const TopNavbar = (props) => {
             </div>
             <div className="flex">
                 <TransparentButton icon="video" toggleSubMenu={() => setShowVideo(!showVideo)} />
-                <TransparentButton icon="th" toggleSubMenu={() => setShowGrid(!showGrid)} />
-                <TransparentButton icon="bell" toggleSubMenu={() => setShowNotif(!showNotif)} />
-                <TransparentButton icon="user-circle" size="2x" toggleSubMenu={() => setShowProfile(!showProfile)} />
-            </div>
-            {
-                showProfile ? <Profile /> : <></>
-            }
-            {
-                showVideo ? <SmallPopUps title="Videos" /> : <></>
-            }
-            {
-                showGrid ? <SmallPopUps title="Grid" /> : <></>
-            }
-            {
-                showNotif ? <SmallPopUps title="Notifs" /> : <></>
-            }
+                {
+                    showVideo ? <SmallPopUps title="Videos" /> : <></>
+                }
 
+                <TransparentButton icon="th" toggleSubMenu={() => setShowGrid(!showGrid)} />
+                {
+                    showGrid ? <SmallPopUps title="Grid" /> : <></>
+                }
+
+                <TransparentButton icon="bell" toggleSubMenu={() => setShowNotif(!showNotif)} />
+                {
+                    showNotif ? <SmallPopUps title="Notifs" /> : <></>
+                }
+
+                <TransparentButton icon="user-circle" size="2x" toggleSubMenu={() => setShowProfile(!showProfile)} />
+                {
+                    showProfile ? <Profile /> : <></>
+                }
+            </div>
         </nav >
     )
 };

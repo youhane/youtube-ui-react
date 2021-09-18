@@ -12,10 +12,10 @@ import Grid from '../../PopUps/Grid';
 import { useState } from "react"
 
 const TopNavbar = (props) => {
-    const [showProfile, setShowProfile] = useState(true)
-    const [showNotif, setShowNotif] = useState(true)
-    const [showVideo, setShowVideo] = useState(true)
-    const [showGrid, setShowGrid] = useState(true)
+    const [showProfile, setShowProfile] = useState(false)
+    const [showNotif, setShowNotif] = useState(false)
+    const [showVideo, setShowVideo] = useState(false)
+    const [showGrid, setShowGrid] = useState(false)
     return (
         <nav className="flex justify-between my-2">
             <YoutubeButton toggleMenu={props.toggleMenu} />

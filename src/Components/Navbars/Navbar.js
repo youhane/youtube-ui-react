@@ -4,15 +4,15 @@ import BigSideNavbar from "./SideNavbar/BigSideNavbar"
 
 // Packages
 import { useState } from "react"
-import { useTransition, animated } from 'react-spring'
+// import { useTransition, animated } from 'react-spring'
 
 const Navbar = () => {
     const [showBigNav, setShowBigNav] = useState(false)
-    const transitions = useTransition(showBigNav, {
-        from: { opacity: 0 },
-        enter: { opacity: 1 },
-        leave: { opacity: 0 },
-    })
+    // const transitions = useTransition(showBigNav, {
+    //     from: { opacity: 0 },
+    //     enter: { opacity: 1 },
+    //     leave: { opacity: 0 },
+    // })
 
     return (
         <>
@@ -23,11 +23,14 @@ const Navbar = () => {
                 :
                 <TopNavbar toggleMenu={() => setShowBigNav(!showBigNav)} />
             }
-            {
+            {/* {
                 transitions(
-                    (styles, item) => item && <animated.div style={styles}><BigSideNavbar toggleMenu={() => setShowBigNav(!showBigNav)} /></animated.div>
+                    (styles, item) => item &&
+                        <animated.div style={styles}>
+                            <BigSideNavbar toggleMenu={() => setShowBigNav(!showBigNav)} />
+                        </animated.div>
                 )
-            }
+            } */}
         </>
     )
 }

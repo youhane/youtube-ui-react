@@ -1,6 +1,11 @@
+import LongSideButton from "../Buttons/LongSideButton"
+
 const Video = () => {
     return (
-        <div></div>
+        <div className="absolute bg-white top-12">
+            <LongSideButton />
+            <LongSideButton />
+        </div>
     )
 }
 

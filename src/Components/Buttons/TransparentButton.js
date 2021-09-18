@@ -7,8 +7,8 @@ import { faVideo, faTh, faBell, faUserCircle, faBars } from '@fortawesome/free-s
 
 library.add(faVideo, faTh, faBell, faUserCircle, faBars)
 
-const TransparentButton = ({ icon, size }) => (
-    <button className="py-2 px-5 h-3/4">
+const TransparentButton = ({ icon, size, toggleSubMenu }) => (
+    <button className="py-2 px-5 h-3/4" onClick={toggleSubMenu}>
         <FontAwesomeIcon icon={icon} size={size} />
     </button>
 );

@@ -5,7 +5,11 @@ import CircleButton from '../../Buttons/CircleButton';
 import YoutubeButton from '../../Buttons/YoutubeButton';
 import Profile from '../../PopUps/Profile';
 
+// Packages
+import { useState } from "react"
+
 const TopNavbar = (props) => {
+    const [showProfile, setShowProfile] = useState(false)
     return (
         <nav className="flex justify-between my-2">
             <YoutubeButton toggleMenu={props.toggleMenu} />
@@ -18,9 +22,12 @@ const TopNavbar = (props) => {
                 <TransparentButton icon="video" />
                 <TransparentButton icon="th" />
                 <TransparentButton icon="bell" />
-                <TransparentButton icon="user-circle" size="2x" />
-                <Profile />
+                <TransparentButton icon="user-circle" size="2x" toggleSubMenu={() => setShowProfile(!showProfile)} />
             </div>
+            {
+                showProfile ? <Profile /> : <></>
+            }
+
         </nav >
     )
 };
